@@ -164,3 +164,69 @@ h1{
 .contact button:hover{
     background: #7EA72F;
 }
+
+#success-message{
+
+    display:none;
+
+    margin-top:30px;
+
+    padding:35px;
+
+    background:#F3F9EA;
+
+    border:1px solid #95C13D;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    color:#3E5066;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+}
+
+#success-message h3{
+
+    margin-top:10px;
+
+    color:#95C13D;
+
+    font-size:32px;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+#success-message p{
+
+    margin-top:15px;
+
+    margin-bottom:0;
+
+    font-size:17px;
+
+}
+
+.success-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#95C13D;
+
+    color:white;
+
+    font-size:40px;
+
+    line-height:70px;
+
+    font-weight:bold;
+
+}
