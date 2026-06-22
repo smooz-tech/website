@@ -171,11 +171,16 @@ form.addEventListener("submit", async function(e){
 
     if(response.ok){
 
-        form.reset();
+    form.reset();
 
-        document.getElementById("success-message").style.display="block";
+    document.getElementById("success-message").style.display="block";
 
-    }
+}
+else{
+
+    alert("There was a problem sending your message.");
+
+}
 
 });
 
