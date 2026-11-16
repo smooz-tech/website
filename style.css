@@ -199,7 +199,10 @@ section.tight{ padding: 56px 0; }
 
 /* Footer */
 footer.site{ padding: 56px 0 40px; border-top: 1px solid var(--line); }
-footer.site .cols{ display:grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
+footer.site .cols{ display:grid; grid-template-columns: 1.2fr 0.7fr 0.8fr 1.6fr; gap: 40px; }
+footer.site address{ font-style: normal; font-size: 14.5px; color: var(--ink-soft); line-height: 1.65; }
+footer.site address strong{ color: var(--navy-deep); font-weight: 600; }
+footer.site address a{ display:inline; margin:0; text-decoration: underline; text-underline-offset: 3px; }
 footer.site h5{ font-family:'Work Sans'; font-size:14px; color:var(--navy-deep); margin:0 0 12px; font-weight:600; }
 footer.site a{ display:block; text-decoration:none; color: var(--ink-soft); font-size:14.5px; margin-bottom:8px; }
 footer.site a:hover{ color: var(--navy-deep); }
@@ -240,6 +243,36 @@ footer.site .bottom{ margin-top: 44px; font-size: 13px; color: var(--ink-soft); 
 .contact-box h3{ font-size: 24px; margin-bottom: 6px; }
 .contact-box p{ color: var(--ink-soft); margin:0; }
 
+/* Registered company details (About) */
+.legal-card{
+  margin: 34px 0 0; padding: 0; max-width: 720px;
+  border: 1px solid var(--line); background: var(--paper-alt);
+  display:grid; grid-template-columns: 1fr 1fr;
+}
+.legal-card > div{ padding: 20px 24px; border-bottom: 1px solid var(--line); }
+.legal-card > div:nth-child(odd){ border-right: 1px solid var(--line); }
+.legal-card > div:nth-last-child(-n+2){ border-bottom: none; }
+.legal-card dt{ font-size: 12.5px; font-weight: 600; color: var(--green-deep); margin: 0 0 4px; }
+.legal-card dd{ margin: 0; font-size: 15.5px; color: var(--navy-deep); line-height: 1.5; }
+.legal-card dd a{ text-underline-offset: 3px; }
+.contact-alt{ margin-top: 22px; font-size: 15px; color: var(--ink-soft); }
+.contact-alt a{ color: var(--navy-deep); text-underline-offset: 3px; }
+
+/* Long-form legal pages */
+.doc{ max-width: 760px; }
+.doc h1{ font-size: 42px; margin-bottom: 10px; }
+.doc .updated{ font-size: 14px; color: var(--ink-soft); margin-bottom: 36px; }
+.doc h2{ font-size: 22px; margin: 40px 0 12px; }
+.doc p, .doc li{ color: var(--ink); font-size: 16.5px; line-height: 1.7; }
+.doc p{ margin: 0 0 14px; }
+.doc ul{ margin: 0 0 14px; padding-left: 22px; }
+.doc li{ margin-bottom: 6px; }
+.doc a{ color: var(--navy-deep); text-underline-offset: 3px; }
+.doc .company-box{
+  border-left: 3px solid var(--green); background: var(--paper-alt);
+  padding: 16px 20px; margin: 0 0 18px; font-size: 15.5px; line-height: 1.65;
+}
+
 /* Responsive */
 @media (max-width: 880px){
   .hero-grid{ grid-template-columns: 1fr; }
@@ -249,7 +282,11 @@ footer.site .bottom{ margin-top: 44px; font-size: 13px; color: var(--ink-soft); 
   .models{ grid-template-columns: 1fr; }
   .product-card{ grid-template-columns: 1fr; }
   footer.site .cols{ grid-template-columns: 1fr; }
-  nav.primary{ gap: 18px; }
+  .legal-card{ grid-template-columns: 1fr; }
+  .legal-card > div:nth-child(odd){ border-right: none; }
+  .legal-card > div:nth-last-child(-n+2){ border-bottom: 1px solid var(--line); }
+  .legal-card > div:last-child{ border-bottom: none; }
+  .doc h1{ font-size: 34px; }  nav.primary{ gap: 18px; }
   .hero h1{ font-size: 38px; }
   section{ padding: 60px 0; }
 }
